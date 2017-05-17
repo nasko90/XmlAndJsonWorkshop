@@ -9,6 +9,8 @@ using Xml.And.Json.Workshop;
 using System.Collections;
 using Xml.And.Json.Workshop.Models.Contracts;
 using Xml.And.Json.Workshop.Models;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace Xml.And.Json.Workshop
 {
@@ -16,19 +18,17 @@ namespace Xml.And.Json.Workshop
     {
         static void Main(string[] args)
         {
-            string json = File.ReadAllText("C:\\Users\\NADIA\\Desktop\\data.number.txt");
+            string json = File.ReadAllText("D:\\Курсове Телерик\\Бази данни\\Json and Xml workshop\\data.number.txt");
 
 
             IEnumerable <CarJasonModel> carJsonModels = JsonConvert.DeserializeObject<List<CarJasonModel>>(json);
             IEnumerable<Car> cars = carJsonModels.Select(CarJasonModel.FromJsonModel);
 
-            var ordered = cars.OrderBy(x => x.Year);
+            var querry = XmlQuerry.ParseQuerry("D:\\Курсове Телерик\\Бази данни\\Json and Xml workshop\\Querry.xml");
+            XDocument querryXml = XDocument.Load("D:\\Курсове Телерик\\Бази данни\\Json and Xml workshop\\Querry.xml");
 
-            foreach (var item in ordered)
-            {
-                Console.WriteLine(item.ToString());
-            }
-            
+        
+
         }
     }
 }

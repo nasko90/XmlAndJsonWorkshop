@@ -6,3 +6,11 @@ C:\Users\NADIA\documents\visual studio 2015\Projects\Xml.And.Json.Workshop\Xml.A
 C:\Users\NADIA\documents\visual studio 2015\Projects\Xml.And.Json.Workshop\Xml.And.Json.Workshop\obj\Debug\Xml.And.Json.Workshop.pdb
 C:\Users\NADIA\documents\visual studio 2015\Projects\Xml.And.Json.Workshop\Xml.And.Json.Workshop\bin\Debug\Newtonsoft.Json.dll
 C:\Users\NADIA\documents\visual studio 2015\Projects\Xml.And.Json.Workshop\Xml.And.Json.Workshop\bin\Debug\Newtonsoft.Json.xml
+D:\Курсове Телерик\Бази данни\Json and Xml workshop\Xml.And.Json.Workshop\bin\Debug\Xml.And.Json.Workshop.exe.config
+D:\Курсове Телерик\Бази данни\Json and Xml workshop\Xml.And.Json.Workshop\obj\Debug\Xml.And.Json.Workshop.exe
+D:\Курсове Телерик\Бази данни\Json and Xml workshop\Xml.And.Json.Workshop\obj\Debug\Xml.And.Json.Workshop.pdb
+D:\Курсове Телерик\Бази данни\Json and Xml workshop\Xml.And.Json.Workshop\bin\Debug\Xml.And.Json.Workshop.exe
+D:\Курсове Телерик\Бази данни\Json and Xml workshop\Xml.And.Json.Workshop\bin\Debug\Xml.And.Json.Workshop.pdb
+D:\Курсове Телерик\Бази данни\Json and Xml workshop\Xml.And.Json.Workshop\bin\Debug\Newtonsoft.Json.dll
+D:\Курсове Телерик\Бази данни\Json and Xml workshop\Xml.And.Json.Workshop\bin\Debug\Newtonsoft.Json.xml
+D:\Курсове Телерик\Бази данни\Json and Xml workshop\Xml.And.Json.Workshop\obj\Debug\Xml.And.Json.Workshop.csprojResolveAssemblyReference.cache
