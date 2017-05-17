@@ -1,0 +1,8 @@
+c:\users\nadia\documents\visual studio 2015\Projects\Xml.And.Json.Workshop\Xml.And.Json.Workshop\bin\Debug\Xml.And.Json.Workshop.exe.config
+C:\Users\NADIA\documents\visual studio 2015\Projects\Xml.And.Json.Workshop\Xml.And.Json.Workshop\bin\Debug\Xml.And.Json.Workshop.exe
+C:\Users\NADIA\documents\visual studio 2015\Projects\Xml.And.Json.Workshop\Xml.And.Json.Workshop\bin\Debug\Xml.And.Json.Workshop.pdb
+C:\Users\NADIA\documents\visual studio 2015\Projects\Xml.And.Json.Workshop\Xml.And.Json.Workshop\obj\Debug\Xml.And.Json.Workshop.csprojResolveAssemblyReference.cache
+C:\Users\NADIA\documents\visual studio 2015\Projects\Xml.And.Json.Workshop\Xml.And.Json.Workshop\obj\Debug\Xml.And.Json.Workshop.exe
+C:\Users\NADIA\documents\visual studio 2015\Projects\Xml.And.Json.Workshop\Xml.And.Json.Workshop\obj\Debug\Xml.And.Json.Workshop.pdb
+C:\Users\NADIA\documents\visual studio 2015\Projects\Xml.And.Json.Workshop\Xml.And.Json.Workshop\bin\Debug\Newtonsoft.Json.dll
+C:\Users\NADIA\documents\visual studio 2015\Projects\Xml.And.Json.Workshop\Xml.And.Json.Workshop\bin\Debug\Newtonsoft.Json.xml
