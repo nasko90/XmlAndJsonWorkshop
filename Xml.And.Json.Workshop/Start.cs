@@ -25,10 +25,11 @@ namespace Xml.And.Json.Workshop
             IEnumerable<Car> cars = carJsonModels.Select(CarJasonModel.FromJsonModel);
 
             var querry = XmlQuerry.ParseQuerry("D:\\Курсове Телерик\\Бази данни\\Json and Xml workshop\\Querry.xml");
-            XDocument querryXml = XDocument.Load("D:\\Курсове Телерик\\Бази данни\\Json and Xml workshop\\Querry.xml");
+            
 
-        
+            CarsFilter.FilterCars(querry,cars); 
 
+           
         }
     }
 }

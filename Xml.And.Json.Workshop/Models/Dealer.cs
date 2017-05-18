@@ -23,6 +23,6 @@ namespace Xml.And.Json.Workshop.Models
         public string Name { get; set; }
 
         public List<City> Cities { get; set; }
-        public string City { get; internal set; }
+        public string City { get; set; }
     }
 }
