@@ -25,16 +25,17 @@ namespace Xml.And.Json.Workshop
                 from querry in querryXml.Descendants("Query")
                 select new XmlQuerry
                 {
+
+                    OutputFile = (string)querry.Attribute("OutputFileName"),
+                    OrderBy = querry.Element("OrderBy").Value,
                     XmlWhereClause =
-                                     from element in querryXml.Descendants("WhereClauses")
+                                     from whereClause in querry.Descendants("WhereClause")
                                      select new XmlWhereClause()
                                      {
-                                         PropertyName = (string)element.Element("WhereClause").Attribute("PropertyName"),
-                                         Type = (string)element.Element("WhereClause").Attribute("Type"),
-                                         Value = element.Element("WhereClause").Value
-                                     },
-                    OutputFile = (string)querry.Attribute("OutputFileName"),
-                    OrderBy = querry.Element("OrderBy").Value                    
+                                         PropertyName = (string)whereClause.Attribute("PropertyName"),
+                                         Type = (string)whereClause.Attribute("Type"),
+                                         Value = whereClause.Value
+                                     }                   
                 };
 
             return querrys;        

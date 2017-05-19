@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using Xml.And.Json.Workshop.Models.Filter;
 
 namespace Xml.And.Json.Workshop.Models
 {
@@ -13,11 +14,25 @@ namespace Xml.And.Json.Workshop.Models
         const string storagePlace = "D:\\Курсове Телерик\\Бази данни\\Json and Xml workshop\\";
         public static void FilterCars(IEnumerable<XmlQuerry> xmlQuerry, IEnumerable<Car> cars)
         {
-            
-            foreach (var querys in xmlQuerry)
+
+            List<XmlQuerry> queryToList = xmlQuerry.ToList();
+
+            for (int i = 0; i < queryToList.Count(); i++)
             {
-                WriteXmlFileByQuery(cars, storagePlace+querys.OutputFile);                               
-            }
+                
+                foreach (var condition in queryToList[i].XmlWhereClause)
+                {                    
+                    cars = QueryTypeFilter.WhereConditions(condition, cars);                   
+                }
+                foreach (var item in cars)
+                {
+                    Console.WriteLine(item.Id);
+                }
+
+
+                cars = OrderCarsBy(queryToList[i].OrderBy, cars);
+                WriteXmlFileByQuery(cars, storagePlace + queryToList[i].OutputFile);
+            }          
         }
 
         private static void WriteXmlFileByQuery(IEnumerable<Car> cars, string pathToSave)
@@ -56,5 +71,20 @@ namespace Xml.And.Json.Workshop.Models
                 writer.WriteEndDocument();
             }
         }
+
+        private static IEnumerable<Car> OrderCarsBy(string orderBy, IEnumerable<Car> carsToOrder)
+        {
+            IEnumerable<Car> filteredCars = new List<Car>();
+
+            switch (orderBy)
+            {
+                case "Year": filteredCars = carsToOrder.OrderBy(x => x.Year); return filteredCars;
+                case "Price": filteredCars = carsToOrder.OrderBy(x => x.Price); return filteredCars;
+                case "Id": filteredCars = carsToOrder.OrderBy(x => x.Id); return filteredCars;
+                default: return filteredCars;
+            }
+        }
+        
+
     }
 }

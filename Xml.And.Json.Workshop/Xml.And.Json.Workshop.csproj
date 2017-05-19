@@ -47,13 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\CarsFilter.cs" />
+    <Compile Include="Models\Filter\CarsFilter.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\CarJasonModel.cs" />
     <Compile Include="Models\City.cs" />
     <Compile Include="Models\Contracts\ICarJasonModel.cs" />
     <Compile Include="Models\Dealer.cs" />
     <Compile Include="Models\Enums\TransmisionType.cs" />
+    <Compile Include="Models\Enums\WhereClaouseType.cs" />
+    <Compile Include="Models\Enums\WhereClouseNames.cs" />
+    <Compile Include="Models\Filter\QueryTypeFilter.cs" />
     <Compile Include="Models\Manufacturer.cs" />
     <Compile Include="XmlQuerry.cs" />
     <Compile Include="Start.cs" />
@@ -64,6 +67,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

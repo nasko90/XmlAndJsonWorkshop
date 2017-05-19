@@ -39,17 +39,4 @@
       </Cities>
     </Dealer>
   </Car>
-  <Car
-    Price="5000"
-    Year="1997"
-    Model="Tigra"
-    Manufacturer="Opel">
-    <TransmisionType>Manual</TransmisionType>
-    <Dealer
-      Name="TA ������">
-      <Cities>
-        <City>Sofia</City>
-      </Cities>
-    </Dealer>
-  </Car>
 </Cars>

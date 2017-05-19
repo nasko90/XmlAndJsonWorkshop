@@ -27,9 +27,9 @@ namespace Xml.And.Json.Workshop
             var querry = XmlQuerry.ParseQuerry("D:\\Курсове Телерик\\Бази данни\\Json and Xml workshop\\Querry.xml");
             
 
-            CarsFilter.FilterCars(querry,cars); 
+            CarsFilter.FilterCars(querry,cars);
 
-           
+
         }
     }
 }

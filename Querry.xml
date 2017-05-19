@@ -3,15 +3,15 @@
   <Query OutputFileName="Result0.xml">
     <OrderBy>Year</OrderBy>
     <WhereClauses>
-      <WhereClause PropertyName="City" Type="Equals">Sofia</WhereClause>
-      <WhereClause PropertyName="Year" Type="GreaterThan">1999</WhereClause>
+      <WhereClause PropertyName="Id" Type="LessThan">6</WhereClause>
+      <WhereClause PropertyName="Year" Type="GreaterThan">1997</WhereClause>
     </WhereClauses>
   </Query>
   <Query OutputFileName="Result1.xml">
-    <OrderBy>Price</OrderBy>
+    <OrderBy>Year</OrderBy>
     <WhereClauses>
-      <WhereClause PropertyName="Model" Type="Equals">Civic</WhereClause>
-      <WhereClause PropertyName="Year" Type="Equals">1999</WhereClause>
+      <WhereClause PropertyName="Model" Type="Equals">6 Skyactiv</WhereClause>
+      <WhereClause PropertyName="Year" Type="Equals">2014</WhereClause>
     </WhereClauses>
   </Query>
-</Queries>
+  </Queries>

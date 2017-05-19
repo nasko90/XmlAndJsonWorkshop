@@ -1,32 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Cars>
   <Car
-    Price="5500"
-    Year="2003"
-    Model="Clio 1.4"
-    Manufacturer="Renaut">
-    <TransmisionType>Manual</TransmisionType>
-    <Dealer
-      Name="T ������">
-      <Cities>
-        <City>Sofia</City>
-      </Cities>
-    </Dealer>
-  </Car>
-  <Car
-    Price="30000"
-    Year="2008"
-    Model="320i Cabrio"
-    Manufacturer="BMW">
-    <TransmisionType>Automatic</TransmisionType>
-    <Dealer
-      Name="MM Auto">
-      <Cities>
-        <City>Sofia</City>
-      </Cities>
-    </Dealer>
-  </Car>
-  <Car
     Price="60000"
     Year="2014"
     Model="6 Skyactiv"
@@ -34,19 +8,6 @@
     <TransmisionType>Manual</TransmisionType>
     <Dealer
       Name="Star Motors">
-      <Cities>
-        <City>Sofia</City>
-      </Cities>
-    </Dealer>
-  </Car>
-  <Car
-    Price="5000"
-    Year="1997"
-    Model="Tigra"
-    Manufacturer="Opel">
-    <TransmisionType>Manual</TransmisionType>
-    <Dealer
-      Name="TA ������">
       <Cities>
         <City>Sofia</City>
       </Cities>

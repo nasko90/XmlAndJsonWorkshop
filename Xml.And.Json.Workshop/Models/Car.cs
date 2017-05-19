@@ -9,6 +9,12 @@ namespace Xml.And.Json.Workshop.Models
 {
     public class Car
     {
+        private static int IdCount = 0;
+        public Car()
+        {
+            IdCount++;
+            this.Id = IdCount;
+        }
         public int Id { get; set; }
 
         public int Year { get; set; }
