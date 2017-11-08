@@ -1,135 +1,131 @@
 
+using AR_FNOL.Models.Enums.EnumsHelpers;
+using System.ComponentModel;
 
-26>4X4
-Passenger
+namespace AR_FNOL.Models.Enums
+{
+    [TypeConverter(typeof(EnumDescriptionTypeConverter))]
+    public enum VehicleType
+    {
+        [Description("<None,")]
+        None,
 
-27>Ambulance>
+        /// UK
+        //[Description("Agricultural")]
+        //UC,
+        //[Description("Commercial vehicle (& special types)")]
+        //CV,
+        //[Description("Goods Carrying")]
+        //UB,
+        //[Description("Hire Car")]
+        //UH,
+        //[Description("Mini Bus")]
+        //UE,
+        //[Description("Motor Car")]
+        //UA,
+        //[Description("Motor Coach")]
+        //UF,
+        //[Description("Motor Cycle")]
+        //UG,
+        //[Description("Motor Trade")]
+        //MT,
+        //[Description("Private Car")]
+        //PC,
+        //[Description("Special Type")]
+        //UD,
+        //[Description("Trade Plate")]
+        //UI,
+        //[Description("Trailer (specified)")]
+        //UJ,
+        //[Description("Trailer (unspecified)")]
+        //UK,
+        //[Description("Personal Motor")]
+        //PM
 
-28>Articulated
-Truck>
+        // Ireland
 
-29>Camper
-Vans>
-
-30>Car
-or Van>
-
-31>Car
-or Van with Attached Trailer>
-
-32>Coaches>
-
-33>Concrete
-Mixers - Articulated>
-
-34>Concrete
-Mixers - Rigid>
-
-35>Diggers/Excavators/Shovellers>
-
-36>Dump
-Truck (Comm Vehicle)>
-
-37>Dumpers
-(Special Type)>
-
-38>Electric
-Delivery Vehicles>
-
-39>Flat/Truck/Low
-Loader - Articulated>
-
-40>Flat/Truck/Low
-Loader - Rigid>
-
-41>Forklifts>
-
-42>Golf
-Buggy>
-
-43>Harvestors>
-
-44>Hearse>
-
-45>Ice
-Cream Van
-
-46>Lawn
-Mower/Cultivators
-
-47>Minibus
-
-48>Mobile
-Shop/Snack Bar/Workshop
-
-49>Other
-Agricultural Vehicles>
-
-50>Public
-Utility Vehicles>
-
-51>Quad
-&gt; 250cc (Rate as ST)>
-
-52>Quad
-251-500cc (Rate as ST)>
-
-53>Refridgerated
-- Articulated>
-
-54>Refridgerated
-- Rigid>
-
-55>Rollers/Vibrators/Tar
-Sprayers>
-
-56>Site
-Clearing/Levelling Plant>
-
- 
-
- 
-
-57>Staff
-Car or Van>
-
-58>Steam
-Driven Vehicles>
-
-59>Tankers
-- Artic>
-
-60>Tankers
-- Rigid>
-
-61>Tippers/Skip
-Lorries - Artic>
-
-62>Tippers/Skip
-Lorries - Rigid>
-
-63>Tractors>
-
-64>Trike
-&gt; 250 cc (Rate as ST)>
-
-65>Trike
-251-500 cc (Rate as ST)>
-
-66>Van
-Articulated>
-
-67>Van
-Rigid>
-
-68>Other></SELECT>
-
- 
-
-69>Mobile
-Crane>
-
-70>Motorbike>
-
- 
+           
+        4X4Passenger = 26,
+        [Description("MotorCoach")]
+        Ambulance,
+        [Description("Articulated Truck")]
+        ArticulatedTruck,
+        [Description("Camper Vans")]
+        CamperVans,
+        [Description("Caror Van")]
+        CarorVan,
+        [Description("Caror Van with Attached Trailer")]
+        CarorVanwithAttachedTrailer,
+        Coaches,
+        [Description("ConcreteMixers - Articulated")]
+        ConcreteMixersArticulated,
+        [Description(" ConcreteMixers - Rigid")]
+        ConcreteMixersRigid,
+        [Description("Diggers/Excavators/Shovellers")]
+        DiggersExcavatorsShovellers,
+        [Description("DumpTruck (Comm Vehicle)")]
+        DumpTruck,
+        [Description("Dumpers(Special Type)")]
+        Dumpers,
+        [Description("ElectricDelivery Vehicles")]
+        ElectricDeliveryVehicles,
+        [Description("Flat/Truck/LowLoader - Articulated")]
+        FlatTruckLowLoaderArticulated,
+        [Description("Flat/Truck/LowLoader - Rigid")]
+        FlatTruckLowLoaderRigid,
+        Forklifts,
+        GolfBuggy,
+        Harvestors,
+        Hearse,
+        [Description("IceCream Van")]
+        IceCreamVan,
+        [Description("LawnMower/Cultivators")]
+        LawnMowerCultivators,
+        Minibus,
+        [Description("MobileShop/Snack Bar/Worksho")]
+        MobileShopSnackBarWorkshop,
+        [Description("OtherAgricultural Vehicles")]
+        OtherAgriculturalVehicles,
+        [Description("PublicUtility Vehicles")]
+        PublicUtilityVehicles,
+        [Description("Quad & 250cc (Rate as ST)")]
+        Quad250cc,
+        [Description("Quad § 251500cc (Rate as ST")]
+        Quad251500cc,
+        [Description("Refridgerated - Articulated")]
+        RefridgeratedArticulated,
+        [Description("Refridgerated - Rigid")]
+        RefridgeratedRigid,
+        [Description("Rollers/Vibrators/TarSprayers")]
+        RollersVibratorsTarSprayers,
+        [Description("SiteClearing/Levelling Plant")]
+        SiteClearingLevellingPlant,
+        [Description("StaffCar or Van")]
+        StaffCaрVan,
+        [Description("SteamDriven Vehicles")]
+        SteamDrivenVehicles,
+        [Description("Tankers- Artic")]
+        TankersArtic,
+        [Description("Tankers-Rigid")]
+        TankersRigid,
+        [Description("Tippers/SkipLorries - Artic")]
+        TippersSkipLorriesArtic,
+        [Description("FlTippers/SkipLorries - Rigidat")]
+        TippersSkipLorriesRigid,
+        Tractors,
+        [Description("FTrike&gt; 250 cc (Rate as STlat")]
+        Trike250,
+        [Description("Trike251-500 cc (Rate as ST)")]
+        Trike251,
+        [Description("Van Articulated")]
+        VanArticulated,
+        [Description("Van Rigid")]
+        VanRigid,
+        [Description("Flat")]
+        Other,
+        [Description("Mobile Cran")]
+        MobileCrane,
+        Motorbike,
+    }
+}
 
